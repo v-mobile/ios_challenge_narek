@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="NcC-Ml-7Wy" customClass="UserViewCell" customModule="TestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NcC-Ml-7Wy" id="J3N-w8-f4Z">
+                <rect key="frame" x="0.0" y="0.0" width="500" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kbD-aP-VwS" customClass="RoundedImageView" customModule="TestApp" customModuleProvider="target">
+                        <rect key="frame" x="10" y="30" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="2Lg-VC-qLp"/>
+                            <constraint firstAttribute="height" constant="60" id="C6Y-gt-Wx8"/>
+                            <constraint firstAttribute="width" secondItem="kbD-aP-VwS" secondAttribute="height" multiplier="1:1" id="Fiw-P2-9yg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQT-Hl-ZD0">
+                        <rect key="frame" x="84" y="31.5" width="387" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP8-49-C15">
+                        <rect key="frame" x="84" y="61" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NP8-49-C15" firstAttribute="leading" secondItem="aQT-Hl-ZD0" secondAttribute="leading" id="AMp-3X-Jhh"/>
+                    <constraint firstItem="aQT-Hl-ZD0" firstAttribute="centerY" secondItem="kbD-aP-VwS" secondAttribute="centerY" multiplier="0.7" id="EUW-m9-A9J"/>
+                    <constraint firstItem="kbD-aP-VwS" firstAttribute="leading" secondItem="J3N-w8-f4Z" secondAttribute="leading" constant="10" id="MMM-gC-h0n"/>
+                    <constraint firstItem="aQT-Hl-ZD0" firstAttribute="leading" secondItem="kbD-aP-VwS" secondAttribute="trailing" constant="14" id="N2X-I3-ecO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aQT-Hl-ZD0" secondAttribute="trailing" constant="21" id="QX5-tM-dOB"/>
+                    <constraint firstItem="kbD-aP-VwS" firstAttribute="centerY" secondItem="J3N-w8-f4Z" secondAttribute="centerY" id="ZPp-mG-O7x"/>
+                    <constraint firstItem="NP8-49-C15" firstAttribute="centerY" secondItem="kbD-aP-VwS" secondAttribute="centerY" multiplier="1.2" id="pYN-no-hyS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="NP8-49-C15" id="Ri2-3O-9Jj"/>
+                <outlet property="userImageView" destination="kbD-aP-VwS" id="eVg-8k-4vS"/>
+                <outlet property="usernameLabel" destination="aQT-Hl-ZD0" id="NgZ-2C-keR"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="0.0"/>
+        </tableViewCell>
+    </objects>
+</document>
